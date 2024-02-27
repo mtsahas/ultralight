@@ -1,0 +1,52 @@
+img {
+    max-width: 100%;
+    width: 380px; 
+    height: 500px;
+    object-fit: cover;
+}
+html, body {
+    height: 100vh;
+}
+body {
+    margin: 20px;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    background-color: #ffe9ec;
+}
+nav {
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+/* taken from laurel's example site */
+a.button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #D1D6DD;
+    background-color: #D1D6DD;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px 12px;
+    transition: 0.25s all ease;
+}
+a.button:hover {
+    background-color: #FEFFFB;
+    border-color: #FEFFFB;
+}
+a.button.current {
+    background-color: transparent;
+    background: #FEFFFB;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+    border-color: #FEFFFB;
+}
+.column {
+    float: left;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: auto;
+    width: 80%;
+    font-size: 20px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Cards CSS</title>
+		<meta charset="utf-8">
+		<style>
+			/* To come */
+			img {
+				max-width: 100%;
+			}
+			html, body {
+				height: 100vh;
+			}
+			body {
+				margin: 0;
+                font-size: 2em;
+                letter-spacing: 0.05em;
+			}
+			section {
+				height: 100vh;
+				background: #87CEEB;
+                /*
+                   vertical centering with flexbox:
+                   https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+                */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+			}
+			.card {
+				width: 450px;
+				height: 300px;
+                font-family: 'Georgia';
+				background: white;
+				border-radius: 8px;
+				text-align: center;
+                /*
+                   vertical centering with flexbox:
+                   https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+                */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative; /* anything in card is relative position to card*/
+                
+			}
+            .logo{
+                /* border: 5px solid red; */
+                width: 100px;
+                position: absolute;
+                top: 10px;
+                left: 1px;
+                z-index: 2;/* go below */
+                mix-blend-mode: multiply;
+            }
+            .name{
+                z-index: 5;
+            }
+            .title{
+                font-size: 13px;
+                text-align: left;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+            .line{
+                background: #E5F2E5;
+                height: 100%;
+                width: 5px;
+                position: absolute;
+                left: 90px;
+            }
+            #two{
+                background-color: black;
+            }
+            #two .card{
+                font-family: "Courier New";
+                background-color:#000080;
+                color: white;
+                text-align: cetner;
+            }
+            #two .logo{
+                width: 100px;
+                position: absolute;
+                top: 10px;
+                left: 1px;
+                mix-blend-mode: normal;
+                /* mix-blend-mode: multiply; */
+            }
+            #two .title1{
+                position: absolute;
+                bottom: 70px;
+                text-align: center;
+                font-size: 14px;
+            }
+            .day{
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                color: white;
+            }
+            .button{
+                position: absolute;
+                left: 100px;
+                bottom: 50px;
+            }
+            .contact{
+                position: absolute;
+                bottom: 10px;
+                font-size: 11px;
+            }
+            .email{
+                position: absolute;
+                top: 10px;
+                right:10px;
+                font-size: 11px;
+                text-align: right;
+            }
+            .bottom{
+                position: absolute;
+                top: 103vh;
+                left: 20px;
+                color: yellow;
+            }
+		</style>
+	</head>
+
+	<body>
+        
+		<section id="one">
+            <div class="day">
+                <a href=#two>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                    </svg>
+                </a>
+            </div>
+
+			<div class="card">
+				<div class="name">Mary Tsahas</div>
+                <div class="logo"> <img src="assets/images/cat-logo.avif"></div>
+                <div class="title"><i>Undergraduate Student</i><br>COS Department <br> Class of 2024</div>
+                <div class="line"></div>
+                <div class="email">mtsahas@princeton.edu <br> 516-580-5405</div>
+            </div>
+            
+
+		</section>
+        <section id="two">
+            
+			<div class="card">
+				<div class="name">Mary Tsahas <br></div>
+                <div class="logo"> <img src="assets/images/stars.webp"></div>
+                <div class="title1"><i>8 Hour Sleeper</i><br>Roslyn, NY * Princeton, NJ <br> Since 2002</div>
+                <div class="contact">1234 Zzzz Road, Dreamland USA</div>
+            </div>
+            <a class="bottom" href=#one>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+              </svg>
+            </a>
+		</section>
+
+	</body>
+
+</html>
