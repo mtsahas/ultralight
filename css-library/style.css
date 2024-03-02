@@ -1,0 +1,62 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+body{
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: #F3D6CE;
+    color: #8C5F66;
+
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+div{
+    padding: .5em;
+}
+.pink{
+    background-color: #CB769E;
+}
+.coral{
+    background-color: #E09891;
+}
+.melon{
+    background-color: #E8B9AB;
+}
+.ash{
+    background-color: #ADBCA5;
+}
+.rose{
+    background-color: #8C5F66;
+}
+.overlay-text {
+    position: absolute;
+    top: 30%; 
+    color: #fff; 
+    font-size: 30px;  
+}
+.hide {
+    display: none;
+}
+.book-cover:hover + .hide {
+    display: block;
+    color: white;
+}
+.book-cover:hover{
+    filter: opacity(0%);
+}
+.container{
+    position:relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+span{
+    padding:20px;
+}
