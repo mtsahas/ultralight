@@ -60,3 +60,32 @@ div{
 span{
     padding:20px;
 }
+
+.nav-container {
+	text-align: center;
+    justify-content: center;
+}
+
+nav {
+    display: inline-block;
+	padding: .7em;
+	border: 1px solid #8C5F66;
+	border-radius: 200px;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	left: 1em;
+    font-weight: bold;
+	right: 1em;
+    width: 15%;
+}
+
+nav a {
+	display: inline-block;
+	margin: 0.25em;
+	text-decoration: none;
+    color: darkgray;
+}
+
+a.current {
+	color:#8C5F66;
+}
