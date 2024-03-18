@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: #D4EFDF;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      @media screen and (max-width: 1500px){
+        .smell{
+            display: none;
+        }
+        .sight{
+            display: none;
+        }
+        .touch{
+            display: none;
+        }
+        .taste{
+            display:none;
+        }
+        .sound{
+            display:none;
+        }
+      }
+      @media screen and (max-width: 1350px) { /*half the screen*/
+        .sight{
+            display:contents;
+        }
+        .centered{
+            display: none;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        .touch{
+            display: contents;
+        }
+        .sight{
+            display: none;
+        }
+      }
+
+      @media screen and (max-width: 1050px) {
+        .smell{
+            display: contents;
+        }
+        .touch{
+            display: none;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        .taste{
+            display: contents;
+        }
+        .smell{
+            display: none;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        .sound{
+            display:contents;
+        }
+        .taste{
+            display:none;
+        }
+      }
+      img{
+        width:65vw;
+      }
+      video{
+        width: 70vw;
+      }
+      .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+    }
+    .lower{
+        top: 80%;
+        font-size: small;
+    }
+    .description{
+        font-size: 70%;
+        color:darkslategrey;
+    }
+    </style>
+  </head>
+  
+  <body>
+    <h1 class="centered">ikaria, through the five senses</h1><br>
+    <p class="lower centered">resize the window to see the different aspects of a place i love</p>
+    <main>
+        <div class="sight">
+            <p> sight </p> 
+            <p class="description">colorful sunsets, endless ocean, rocky landscapes</p>
+            <img src="assets/images/ikaria-sunset.png" alt="Ikarian sunset over the ocean.">
+        </div>
+        <div class="touch">
+            <p> touch</p>
+            <p class="description"> rocky ground, soft kittens, little paws</p>
+            <img src="assets/images/ikaria-cat.png" alt="A small white and gray cat lying in Mary's lap.">
+        </div>
+        <div class="smell">
+            <p> smell</p>
+            <p class="description"> ocean water, sunscreen </p>
+            <img src="assets/images/ikaria-beach.png" alt="Landscape picture of the ocean in Karakinagri, Ikaria.">
+        </div>
+        <div class="taste">
+            <p> taste</p>
+            <p class="description"> tomatoes from my grandma's garden, salty feta, local olive oil </p>
+            <img src="assets/images/ikaria-salad.jpeg" alt="Xoriatiki salad with cucumbers, tomaotes, feta, and olives.">
+        </div>
+        <div class="sound">
+            <p> sound</p>
+            <p class="description"> plucking of bouzouki strings, whistling and clapping, low chatter</p>
+            <video controls>
+                <source src="assets/images/ikaria-music.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+  </body>
+
+</html>
