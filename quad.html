@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>quaikus</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+    html{
+        background-image: linear-gradient(to right, green, blue);
+        background-repeat:no-repeat ;
+        background-size: 120% 200%;
+
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+
+    }
+    .container {
+        width: 80%;
+        height: 80vh;
+        outline: 2px white solid;
+        position: relative;
+     }
+     .hide {
+        display: none;
+        z-index: 3;
+        text-align: center;
+        color: gray;
+        
+        
+    }
+    .link:hover + .hide {
+        display: block;
+    }
+    .link{
+        z-index: 1;
+    }
+    img{
+        width: 40%;
+     }
+    #link1{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+     #haiku1{
+        position: absolute;
+        width: 250px;
+        top: 30%;
+        left: 40%;
+        background-color: darkred;
+     }
+
+    #link2{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    #haiku2{
+        position: absolute;
+        width: 250px;
+        top: 50%;
+        left: 20%;
+        background-color: darkred;
+     }
+     #link3{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+    }
+
+    #haiku3{
+        position: absolute;
+        width: 250px;
+        top: 60%;
+        left: 70%;
+        background-color: darkred;
+
+     }
+     #link4{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+
+    #haiku4{
+        position: absolute;
+        width: 250px;
+        top: 30%;
+        left: 50%;
+        background-color: darkred;
+
+     }     
+    #pic-link1{
+        position: absolute;
+        top: 60%;
+        left: 20%;
+    }
+    #pic1{
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        width: 70%;
+     }
+     #pic-link2{
+        position: absolute;
+        top: 20%;
+        left: 80%;
+    }
+
+    #pic2{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+     }
+     #pic-link3{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+    }
+
+    #pic3{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    #pic-link4{
+        position: absolute;
+        top: 85%;
+        left: 39%;
+    }
+
+    #pic4{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 70%;
+
+    }
+
+     a{
+        color: white;
+     }
+     .italic {
+        -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <a class="link italic" id="link1">studious</a>
+            <div id = "haiku1" class="hide">
+                <p>friends sit quietly<br> comforting couches and chairs <br> laptops whir on laps</p>
+            </div>
+            <a class="link italic" id="link2">moose</a>
+            <div class="hide" id="haiku2">
+                <p>the moose stares at us <br> studying, chatting, sleeping <br> seer of the truth</p>
+            </div>
+            <a class="link italic" id="link3">escape</a>
+            <div class="hide" id="haiku3">
+                <p>bass rumbles the floor <br> we all sit in a circle <br> exchanging stories</p>
+            </div>
+            <a class="link italic" id="link4">scratch city</a>
+            <div class="hide" id="haiku4">
+                <p>i just scratched the 8 <br> laughter erupts amongst us <br> scratch city local</p>
+            </div>
+            <a class="link" id="pic-link1">stg</a>
+            <div class="hide" id="pic1">
+                <img src="assets/images/quad/stg.png" alt="friends at stg">
+            </div>
+            <a class="link" id="pic-link2">everyone</a>
+            <div class="hide" id="pic2">
+                <img src="assets/images/quad/semis-selfie.JPG" alt="selfie with friends">
+            </div>
+            <a class="link" id="pic-link3">pool</a>
+            <div class="hide" id="pic3">
+                <img src="assets/images/quad/pool.png" alt="destiny lying on the pool table to get her shot">
+            </div>
+            <a class="link" id="pic-link4">floortime</a>
+            <div class="hide" id="pic4">
+                <img src="assets/images/quad/floor.png" alt="amir and dion lying on the floor">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
