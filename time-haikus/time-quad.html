@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<!-- inspiration: https://sharedspace.page/ -->
+<head>
+    <title>quaikus</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+    html{
+        background-image: linear-gradient(to right, green, blue);
+        background-repeat:no-repeat ;
+        background-size: 120% 200%;
+
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+
+    }
+    .container {
+        width: 80%;
+        height: 80vh;
+        outline: 2px white solid;
+        position: relative;
+     }
+     .hide {
+        display: none;
+        z-index: 3;
+        text-align: center;
+        color: white;
+    }
+    .link:hover + .hide {
+        display: block;
+    }
+    .link{
+        z-index: 1;
+    }
+    img{
+        width: 40%;
+     }
+    #link1{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+     #haiku1{
+        position: absolute;
+        width: 250px;
+        top: 30%;
+        left: 40%;
+        background-color: darkred;
+     }
+
+    #link2{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    #haiku2{
+        position: absolute;
+        width: 250px;
+        top: 50%;
+        left: 20%;
+        background-color: darkred;
+     }
+     #link3{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+    }
+
+    #haiku3{
+        position: absolute;
+        width: 250px;
+        top: 60%;
+        left: 70%;
+        background-color: darkred;
+
+     }
+     #link4{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+
+    #haiku4{
+        position: absolute;
+        width: 250px;
+        top: 30%;
+        left: 50%;
+        background-color: darkred;
+
+     }     
+
+
+     a{
+        color: white;
+     }
+     .italic {
+        -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+        transform: scale(1) rotate(0deg) translate(0px, 0px) skew(30deg, 0deg);
+    }
+    .inspiration{
+        color: white;
+        font-size: x-small;
+        padding-left: 10%; 
+    }
+    #haiku1, #haiku2, #haiku3, #haiku4{
+        opacity: 0;
+    }
+    body[data-status="morning"] #haiku1{
+        opacity: 1;
+    }
+    body[data-status="evening"] #haiku4{
+        opacity: 1;
+    }
+    body[data-status="night"] #haiku3{
+        opacity: 1;
+    }
+    body[data-status="afternoon"] #haiku2{
+        opacity: 1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <a class="link italic" id="link1">studious</a>
+            <div id = "haiku1" class="hide">
+                <p>friends sit quietly<br> comforting couches and chairs <br> laptops whir on laps</p>
+            </div>
+            <a class="link italic" id="link2">moose</a>
+            <div class="hide" id="haiku2">
+                <p>the moose stares at us <br> studying, chatting, sleeping <br> seer of the truth</p>
+            </div>
+            <a class="link italic" id="link3">escape</a>
+            <div class="hide" id="haiku3">
+                <p>bass rumbles the floor <br> we all sit in a circle <br> exchanging stories</p>
+            </div>
+            <a class="link italic" id="link4">scratch city</a>
+            <div class="hide" id="haiku4">
+                <p>i just scratched the 8 <br> laughter erupts amongst us <br> scratch city local</p>
+            </div>
+
+        </div>
+    </div>
+    <p class="inspiration"> inspired by <a href="https://sharedspace.page/">https://sharedspace.page/</a></p>
+
+
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
