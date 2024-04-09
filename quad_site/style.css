@@ -3,6 +3,7 @@ body, html {
     /* position: relative; */
     margin: 0%;
     font-family: sans-serif;
+    /* background-color: linen; */
 
 }
 
@@ -81,13 +82,19 @@ a.button{
     text-align: center;
     border: 0;
 }
+a{
+    margin-bottom: 10%;
+}
 .center{
     /* border: 1px solid red; */
     align-items: center;
     /* border-radius: 20%; */
     transition: 0.25s all ease;
     /* width:140%; */
+}
 
+.header{
+    font-size: 150%;
 }
 
 
@@ -102,7 +109,7 @@ a.button{
 }
 img{
     width:100%;
-    /* margin: 1%; */
+    padding-bottom: 1%;
 }
 .flex-item-left {
     flex: 33%;
@@ -118,13 +125,13 @@ img{
 }
 .description{
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 100%;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 120%;
 
 }
 .details{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 120%;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 110%;
 }
 
 a.button {
