@@ -56,16 +56,16 @@ h1{
     position: absolute;
     top:90%;
     left: 1%;
+    font-size: 240%;
 }
 a{
     text-decoration: none;
-    font-size: 100%;
     padding: 12px;
     margin-right: 10px;
-    font-size: 240%;
     color: black;
     background: rgba(255, 255, 255, 0.75);
 }
+
 a:hover{
     text-decoration: underline;
 }
@@ -95,7 +95,6 @@ a:hover{
 }
 .box{
     background: rgba(255, 255, 255, 0.75);
-
     margin-bottom: 6%;
     padding: 2%;
 }
@@ -113,12 +112,8 @@ a:hover{
 .names{
     position: relative;
     margin-left: 1%;
-    a{
-        font-size: 120%;
-        text-wrap:nowrap;  
-    }
-
 }
+
 img{
     max-width: 90vw;
 }
@@ -126,6 +121,8 @@ img{
     display: inline-block;
     margin-top: 2%;
     margin-bottom: 2%;
+    font-size: 120%;
+    text-wrap: nowrap;
 }
 
 @media (max-width: 700px) {
@@ -152,5 +149,8 @@ img{
         display: inline-block;
         margin-top: 4%;
         margin-bottom: 4%;
+    }
+    .nav{
+        font-size: 200%;
     }
 }
