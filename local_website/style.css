@@ -43,7 +43,7 @@ h1{
     width: fit-content;
     background: rgba(255, 255, 255, 0.75)
 }
-.descriptions{
+.subtitle{
     font-size: 2vw;
     background: rgba(255, 255, 255, 0.75)
 }
@@ -114,7 +114,7 @@ a:hover{
     position: relative;
     margin-left: 1%;
     a{
-        font-size: 160%;
+        font-size: 120%;
         text-wrap:nowrap;  
     }
 
@@ -132,7 +132,13 @@ img{
     .grid{
         grid-template-columns: repeat(auto-fill, minmax(10vw, 20vw));
     }
-    .descriptions{
+    .subtitle{
+        font-size: 5vw;
+    }
+    .details{
+        font-size: 4.5vw;
+    }
+    .description{
         font-size: 5vw;
     }
     .title{
