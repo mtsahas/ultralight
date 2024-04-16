@@ -124,6 +124,31 @@ img{
     font-size: 120%;
     text-wrap: nowrap;
 }
+.highlight-yellow1{
+    background-color: #FFC600;
+}
+.highlight-yellow2{
+    background-color: #FEDD00;
+}
+.highlight-yellow3{
+    background-color: #FCF300;
+}
+.highlight-yellow4{
+    background-color: #CFE57D;
+}
+.highlight-blue1{
+    background-color: #A2D6F9;
+}
+.highlight-blue2{
+    background-color: #60B6FB;
+}
+.highlight-blue3{
+    background-color: #1E96FC;
+}
+.highlight-blue4{
+    background-color: #1360E2;
+}
+
 
 @media (max-width: 700px) {
     .grid{
