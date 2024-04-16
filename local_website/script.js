@@ -28,4 +28,4 @@ function updateTimeStatus() {
   updateTimeStatus(); // Call the function to set initial status
   
   // Update status every second
-  setInterval(updateTimeStatus, 1000);
+  setInterval(updateTimeStatus, 750);
