@@ -2,16 +2,17 @@ body, html {
     height: 100%;
     /* position: relative; */
     margin: 0%;
-    font-family: sans-serif;
+    font-family:monospace;
+    background-color: aqua;
     /* background-color: linen; */
 
 }
 
 .bg {
     /* The image used */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 0.5)), url("assets/quad_house_fb.jpeg");
-  
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("assets/quad_house_fb.jpeg"); */
+    background-color: chartreuse;
     /* Full height */
     height: 100%;
     /* width: 50vw; */
@@ -46,7 +47,7 @@ body, html {
     /* justify-content: center; */
     color: white;
     font-size: 4vw;
-    font-family:sans-serif;
+    /* font-family:sans-serif; */
     text-align: center;
     width: 80%;
     outline: 3px white solid;
@@ -58,7 +59,7 @@ a{
     text-decoration: none;
     color: white;
     /* margin-left: 20%; */
-    font-family:sans-serif;
+    /* font-family:sans-serif; */
     font-size: 100%;
 
 }
@@ -108,9 +109,10 @@ a{
     /* color: white; */
 }
 img{
-    width:100%;
+    /* height: 6%; */
+    width: 80%;
     padding-bottom: 1%;
-}
+} 
 .flex-item-left {
     flex: 33%;
     padding: 1%;
@@ -127,11 +129,13 @@ img{
     color: black;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-size: 120%;
+    background-color: chartreuse;
 
 }
 .details{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-size: 110%;
+    background-color: chartreuse;
 }
 
 a.button {
@@ -159,3 +163,68 @@ a.button.current {
 h1{
     padding-left: 1%;
 }
+.index{
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    width: 80vw;
+}
+hr{
+    height: 10px;
+    background-color: blue;
+}
+.box{
+    background-color: pink;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    border-top: 1px solid;
+    background-color: white;
+    z-index: 1;
+    font-size: 0.8rem;
+  }
+  
+  #chat {
+    width: 4rem;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1.2rem;
+    right: 0;
+    position: absolute;
+    background-color: inherit;
+    z-index: 1;
+  }
+  
+  
+  #contact {
+    width: 2rem;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    background-color: inherit;
+    z-index: 1;
+    text-align: center;
+    border-left: var(--border-solid);
+  
+  }
+  
+  marquee {
+  }
+  
+  #currently-in-topolo {
+    display: inline-block;
+    width: calc(100vw - 4em);
+    height: 100%;
+    position: absolute;
+    padding-top: 1rem;
+    left: 0;
+  }
